@@ -1,10 +1,13 @@
-fn main() {
-
-    let valor = 0x5b3cu32;
-    let com = !valor;
-     
-     println!("Representação em bits é: {:#032b}", valor);
-     println!("Complemento é: {:b}", com);
-     println!("Que corresponde a: {:#x}", com);
- }
- 
+fn main(){
+    
+    let original:u32 = 0x5b3c;
+    let complementar = !original;
+    
+    println!("Operador Complementar (32 bits)\n");
+    println!("Qual será o complemento de {:#x} ?", original);
+    println!("Representação em bits é: {:032b}", original);
+    println!("Complemento é: {:032b}", complementar);
+    println!("Que corresponde à: {:#x}", complementar);
+    println!("Ou seja: ~{:#x} = {:#x}", original, complementar);
+    
+}

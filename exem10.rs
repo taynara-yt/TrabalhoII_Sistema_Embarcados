@@ -1,12 +1,14 @@
-fn main() {
-
-   let a = 0x6DB7u16;
-   let b = 0xA726u16;
+fn main(){
     
-    println!("Representação em bits é: {:#018b}", a);
-    println!("Representação em bits é: {:#018b}", b);
+    let a:u16 = 0x6db7;
+    let b:u16 = 0xa726;
+    let ab = a|b;
     
-    println!("A|B é: {:#018b}", (a | b));
-    println!("Que corresponde a: {:x}", (a | b));
+    println!("Operador Bitwise Lógicos\n");
+    println!("Suponha que a e b sejam variáveis inteiras\nsem sinal de valores {:#x} e {:#x}.", a, b);
+    println!("Qual o valor de a | b ?");
+    println!("  a = {:016b} = {:#x}", a, a);
+    println!("  b = {:016b} = {:#x}", b, b);
+    println!("a|b = {:016b} = {:#x}", ab, ab);
+    
 }
-

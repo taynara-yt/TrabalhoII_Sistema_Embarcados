@@ -1,12 +1,12 @@
-fn main() {
-
-    let a = 0x6DB7u16;
+fn main(){
     
-     
-     println!("Representação em bits é: {:#018b}", a);
-     println!("a~: {:b}", !a);
-     println!("Que corresponde a: {:x}", !a);
-     
-     
- }
- 
+    let a:u16 = 0x6db7;
+    let complementar = !a;
+    
+    println!("Operador Bitwise Lógicos\n");
+    println!("Suponha que a seja variável inteira sem sinal de valores {:#x}.", a);
+    println!("Qual o valor de ~a ?");
+    println!(" a = {:016b} = {:#x}", a, a);
+    println!("~a = {:016b} = {:#x}", complementar, complementar);
+    
+}
