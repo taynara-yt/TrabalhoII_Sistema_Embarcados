@@ -18,7 +18,8 @@ fn main(){
     let valor = 0x7ffu16;
     let com = !valor;
     
-    println!("Representação em bits é: {:#018b}", valor);
+    println!("Exemplo(considerando palavra de 16 bits): ");
+    println!("Representação em bits é: {:016b}", valor);    
     println!("Complemento é: {:b}", com);
     println!("Que corresponde a: {:#x}", com);
 }
@@ -30,8 +31,9 @@ fn main() {
 
     let valor = 0xC5u32;
     let com = !valor;
-     
-     println!("Representação em bits é: {:#032b}", valor);
+
+     println!("Exemplo(considerando palavra de 32 bits): ");
+     println!("Representação em bits é: {:032b}", valor);     
      println!("Complemento é: {:b}", com);
      println!("Que corresponde a: {:#x}", com);
  }
@@ -44,7 +46,8 @@ fn main() {
     let valor = 0x1111u32;
     let com = !valor;
      
-     println!("Representação em bits é: {:#032b}", valor);
+     println!("Exemplo(considerando palavra de 32 bits): ");
+     println!("Representação em bits é: {:032b}", valor);
      println!("Complemento é: {:b}", com);
      println!("Que corresponde a: {:#x}", com);
  }
@@ -58,7 +61,8 @@ fn main() {
     let valor = 0xffffu32;
     let com = !valor;
      
-     println!("Representação em bits é: {:#032b}", valor);
+     println!("Exemplo(considerando palavra de 32 bits): ");
+     println!("Representação em bits é: {:032b}", valor);
      println!("Complemento é: {:b}", com);
      println!("Que corresponde a: {:#x}", com);
  }
@@ -71,7 +75,8 @@ fn main() {
     let valor = 0x5b3cu32;
     let com = !valor;
      
-     println!("Representação em bits é: {:#032b}", valor);
+     println!("Exemplo(considerando palavra de 32 bits): ");
+     println!("Representação em bits é: {:032b}", valor);
      println!("Complemento é: {:b}", com);
      println!("Que corresponde a: {:#x}", com);
  }
@@ -83,12 +88,12 @@ fn main() {
 
     let a = 0x6DB7u16;
     
-     
-     println!("Representação em bits é: {:#018b}", a);
+     println!("Operadores Bitwise Lógicos:");
+     println!("Qual o valor de ~a ?");
+     println!("Representação em bits é: {:016b}", a);
      println!("a~: {:b}", !a);
-     println!("Que corresponde a: {:x}", !a);
-     
-     
+     println!("Que corresponde à: {:#x}", !a);
+         
  }
 ~~~
 
@@ -98,10 +103,11 @@ fn main() {
 
     let b = 0xA726u16;
     
-     
-     println!("Representação em bits é: {:#018b}", b);
-     println!("a~: {:b}", !b);
-     println!("Que corresponde a: {:x}", !b);
+     println!("Operadores Bitwise Lógicos:");
+     println!("Qual o valor de ~b ?");
+     println!("Representação em bits é: {:016b}", b);
+     println!("b~: {:b}", !b);
+     println!("Que corresponde à: {:#x}", !b);
      
  }
 ~~~
@@ -113,11 +119,12 @@ fn main() {
     let a = 0x6DB7u16;
     let b = 0xA726u16;
      
-     println!("Representação em bits é: {:#018b}", a);
-     println!("Representação em bits é: {:#018b}", b);
-     
-     println!("A&B é: {:#018b}", (a & b));
-     println!("Que corresponde a: {:x}", (a & b));
+     println!("Operadores Bitwise Lógicos:");
+     println!("Qual o valor de A & B ?");
+     println!("Representação em bits é: {:016b}", a);
+     println!("Representação em bits é: {:016b}", b);
+     println!("A&B é: {:016b}", (a & b));
+     println!("Que corresponde à: {:#x}", (a & b));
  }
 ~~~
 
@@ -128,11 +135,12 @@ fn main() {
     let a = 0x6DB7u16;
     let b = 0xA726u16;
      
-     println!("Representação em bits é: {:#018b}", a);
-     println!("Representação em bits é: {:#018b}", b);
-     
-     println!("A^B é: {:#018b}", (a ^ b));
-     println!("Que corresponde a: {:x}", (a ^ b));
+     println!("Operadores Bitwise Lógicos:");
+     println!("Qual o valor de A ^ B ?");
+     println!("Representação em bits é: {:016b}", a);
+     println!("Representação em bits é: {:016b}", b);
+     println!("A^B é: {:016b}", (a ^ b));
+     println!("Que corresponde à: {:#x}", (a ^ b));
  }
 ~~~
 
@@ -140,14 +148,15 @@ fn main() {
 ~~~c
 fn main() {
 
-   let a = 0x6DB7u16;
-   let b = 0xA726u16;
-    
-    println!("Representação em bits é: {:#018b}", a);
-    println!("Representação em bits é: {:#018b}", b);
-    
-    println!("A|B é: {:#018b}", (a | b));
-    println!("Que corresponde a: {:x}", (a | b));
-}
+    let a = 0x6DB7u16;
+    let b = 0xA726u16;
+     
+     println!("Operadores Bitwise Lógicos:");
+     println!("Qual o valor de A | B ?");
+     println!("Representação em bits é: {:016b}", a);
+     println!("Representação em bits é: {:016b}", b);     
+     println!("A|B é: {:016b}", (a | b));
+     println!("Que corresponde à: {:#x}", (a | b));
+ }
 
 ~~~
