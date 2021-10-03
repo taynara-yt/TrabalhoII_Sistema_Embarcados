@@ -14,7 +14,7 @@ fn main() {
          
          println!("Máscara:");
          println!("Transformação da Variavel {:#x} para nova representação binária na qual os 8 bits mais a direita são 1s e os 8 bits a esquerda permanecem orginais.",a );
-         println!("Representação de A: {:#x} em bits = {:#018b}", a, a);
-         println!("Máscara: {:#x} = {:#018b}", masc, masc);
-         println!("Representação de B: {:#x} em bits = {:#018b}", b, b);
+         println!("Representação de A: {:#x} em bits = {:016b}", a, a);
+         println!("Máscara: {:#x} = {:016b}", masc, masc);
+         println!("Representação de B: {:#x} em bits = {:016b}", b, b);
      }
