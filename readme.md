@@ -160,3 +160,204 @@ fn main() {
  }
 
 ~~~
+
+**Exemplo 11**
+~~~c
+fn main(){
+    
+    let a:u16 = 0x6db7;
+    let m:u16 = 0x3f;
+    let b:u16 = a & m;
+
+    //Exemplo na página 15
+
+    println!("Máscara\n");
+    println!("Suponha que a = {:#x} e que queiramos extrair os 6 bits mais\na direita de a e assinalar à variável b. Como fazer isso ?\n", a);
+    println!("a = {:016b} = {:#x}", a, a);
+    println!("M = {:016b} = {:#x}", m, m);
+    println!("b = {:016b} = {:#x}", b, b);
+    
+}
+~~~
+
+
+**Exemplo 12**
+~~~c
+fn main(){
+    
+    let a:u16 = 0x6db7;
+    let m:u16 = 0xfc00;
+    let b:u16 = a & m;
+    
+    //Exemplo na página 17
+
+    println!("Máscara\n");
+    println!("Suponha, novamente, que a seja uma variável inteira se,\nsinal de valor {:#x}. Agora, extraia os 6 bits mais à\nesquerda desse valor e assinale à variável inteira sem sinal b.\nAssinale 0s aos 10 bits mais à direita de b.\n", a);
+    println!("a = {:016b} = {:#x}", a, a);
+    println!("M = {:016b} = {:#x}", m, m);
+    println!("b = {:016b} = {:#x}", b, b);
+    
+}
+~~~
+
+
+**Exemplo 13**
+~~~c
+fn main(){
+    
+    let a:u16 = 0x6db7;
+    let m:u16 = 0xff;
+    let b:u16 = a | m;
+    
+    //Exemplo na página 20
+
+    println!("Máscara\n");
+    println!("Suponha que a variável a seja uma inteira sem sinal de valor\n{:#x}, como antes.Transforme a sua correspondente representação\nbinária em uma outra representação binária na qual os 8 bits mais\nà direita são todos 1s e os 8 bits mais à esquerda permanecem\ncom seus valores originais. Assinale essa representação binária\nà variável inteira sem sinal b.\n", a);
+    println!("a = {:016b} = {:#x}", a, a);
+    println!("M = {:016b} = {:#x}", m, m);
+    println!("b = {:016b} = {:#x}", b, b);
+    
+}
+~~~
+
+
+**Exemplo 14**
+~~~c
+fn main(){
+    
+    let a:u16 = 0x6db7;
+    let m:u16 = 0xff00;
+    let b:u16 = a | m;
+    
+    //Exemplo na página 22
+
+    println!("Máscara\n");
+    println!("Suponha, agora, que desejamos transformar a representação binária\nde a em outra representação binária, na qual os 8 bits mais\nà esquerda são todos 1s e os 8 bits mais à direita permanecem\ncom os seus valores originais.\n");
+    println!("a = {:016b} = {:#x}", a, a);
+    println!("M = {:016b} = {:#x}", m, m);
+    println!("b = {:016b} = {:#x}", b, b);
+    
+}
+~~~
+
+
+**Exemplo 15**
+~~~c
+fn main(){
+    
+    let a:u16 = 0x6db7;
+    let m:u16 = 0xff;
+    let b:u16 = a ^ m;
+    
+    //Exemplo na página 24
+
+    println!("Máscara\n");
+    println!("Suponha que a seja uma variável inteira sem sinal cujo valor é\n{:#x}. Vamos agora inverter os 8 bits mais à direita e preservar\nos 8 bits mais à esquerda. Essa nova representação binária\nserá assinalada à variável inteira sem sinal b.\n", a);
+    println!("a = {:016b} = {:#x}", a, a);
+    println!("M = {:016b} = {:#x}", m, m);
+    println!("b = {:016b} = {:#x}", b, b);
+    
+}
+~~~
+
+
+**Exemplo 16**
+~~~c
+fn main(){
+    
+    let a:u16 = 0x6db7;
+    let m:u16 = 0xff00;
+    let b:u16 = a ^ m;
+    
+    //Exemplo na página 25
+
+    println!("Máscara\n");
+    println!("Se quisermos inverter os 8 bits mais à esquerda de a e manter os\n8 bits mais à direita originais:\n");
+    println!("a = {:016b} = {:#x}", a, a);
+    println!("M = {:016b} = {:#x}", m, m);
+    println!("b = {:016b} = {:#x}", b, b);
+    
+}
+~~~
+
+
+**Exemplo 17**
+~~~c
+fn main(){
+    
+    let m:u16 = 0x4;
+    let a:u16 = 0x6db7;
+    let b:u16 = a ^ m;
+    let c:u16 = b ^ m;
+    
+    //Exemplo na página 27
+
+    println!("Máscara\n");
+    println!("Suponha que a seja uma variável inteira sem sinal cujo valor é {:#x}.", a);
+    println!("Qual o resultado da expressão a ^ {:#x} ?", m);
+    println!("Se essa operação for executada repetidamente,\no valor de a será alternado entre {:#x} e {:#x}.\n", a, c);
+    println!("a = {:016b} = {:#x}", a, a);
+    println!("M = {:016b} = {:#x}", m, m);
+    println!("b = {:016b} = {:#x}", b, b);
+    println!("M = {:016b} = {:#x}", m, m);
+    println!("c = {:016b} = {:#x}", c, c);
+    
+}
+~~~
+
+
+**Exemplo 18**
+~~~c
+fn main(){
+    
+    let b:u8 = 0xaf;
+    let m1:u8 = 0xfc;
+    let a:u8 = b & m1;
+    let m2:u8 = 0x02;    
+    let c:u8 = a|m2;
+    
+    //Exemplo na página 29
+
+    println!("Máscara\n");
+    println!("E se eu quiser alterar alguns bits para um valor pré-estabelecido?");
+    println!("Por exemplo, eu quero trocar os dois bits menos significativos\npara o valor 10.\n");
+    println!("{:#x} = {:08b} = B", b, b);
+    println!("{:#x} = {:08b} = M1", m1, m1);
+    println!("{:#x} = {:08b} = B & M1", a, a);
+    println!(" {:#x} = {:08b} = M2", m2, m2);
+    println!("{:#x} = {:08b} = ((B & M1)|M2)", c, c);
+    
+}
+~~~
+
+
+**Exemplo 19**
+~~~c
+fn main(){
+    
+    let b:u8 = 0xaf;
+    let m1:u8 = 0xe3;
+    let a:u8 = b & m1;
+    let m2:u8 = 0x14;
+    let c:u8 = a|m2;
+    
+    //Exemplo na página 31
+
+    println!("Máscara\n");
+    println!("Outro exemplo, eu quero trocar os bits 5, 4 e 3 para o valor 101\ne mantendo os outros bits intactos.\n");
+    println!("{:#x} = {:08b} = B", b, b);
+    println!("{:#x} = {:08b} = M1", m1, m1);
+    println!("{:#x} = {:08b} = B & M1", a, a);
+    println!("{:#x} = {:08b} = M2", m2, m2);
+    println!("{:#x} = {:08b} = ((B & M1)|M2)", c, c);
+    
+}
+~~~
+
+
+
+
+
+
+
+
