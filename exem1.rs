@@ -3,7 +3,7 @@ fn main(){
     let com = !valor;
     
     println!("Exemplo(considerando palavra de 16 bits): ");
-    println!("Representação em bits é: {:#018b}", valor);    
+    println!("Representação em bits é: {:016b}", valor);    
     println!("Complemento é: {:b}", com);
     println!("Que corresponde a: {:#x}", com);
 }
