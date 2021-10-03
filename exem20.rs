@@ -10,7 +10,7 @@ fn main(){
     let x6:u8 = x << 6;
     let x7:u8 = x << 7;
     
-    //Exemplo na página 33
+    //Reprodução do exemplo no slide 33
     
     println!("Operadores de Deslocamento\n");
     println!("Deslocando bits à esquerda\n");

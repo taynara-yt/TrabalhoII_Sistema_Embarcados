@@ -355,9 +355,139 @@ fn main(){
 ~~~
 
 
+**Exemplo 20**
+~~~c
+fn main(){
+    
+    let x:u8 = 1;
+    let x0:u8 = x << 0;
+    let x1:u8 = x << 1;
+    let x2:u8 = x << 2;
+    let x3:u8 = x << 3;
+    let x4:u8 = x << 4;
+    let x5:u8 = x << 5;
+    let x6:u8 = x << 6;
+    let x7:u8 = x << 7;
+    
+    //Reprodução do exemplo no slide 33
+    
+    println!("Operadores de Deslocamento\n");
+    println!("Deslocando bits à esquerda\n");
+    println!("{:08b}",x0);
+    println!("{:08b}",x1);
+    println!("{:08b}",x2);
+    println!("{:08b}",x3);
+    println!("{:08b}",x4);
+    println!("{:08b}",x5);
+    println!("{:08b}",x6);
+    println!("{:08b}",x7);
+}
+
+~~~
 
 
+**Exemplo 21**
+~~~c
+fn main(){
+    
+    let x:u8 = 128;
+    let x0:u8 = x >> 0;
+    let x1:u8 = x >> 1;
+    let x2:u8 = x >> 2;
+    let x3:u8 = x >> 3;
+    let x4:u8 = x >> 4;
+    let x5:u8 = x >> 5;
+    let x6:u8 = x >> 6;
+    let x7:u8 = x >> 7;
+    
+    //Reproduzindo exemplo do slide 34
+    
+    println!("Operadores de Deslocamento\n");
+    println!("Deslocando bits à direita\n");
+    println!("{:08b}",x0);
+    println!("{:08b}",x1);
+    println!("{:08b}",x2);
+    println!("{:08b}",x3);
+    println!("{:08b}",x4);
+    println!("{:08b}",x5);
+    println!("{:08b}",x6);
+    println!("{:08b}",x7);
+}
+
+~~~
 
 
+**Exemplo 22**
+~~~c
+fn main(){
+    let a:u16 = 0x6DB7;
+    let b:u16 = a << 6;
+    
+    //Reproduzindo exemplo do slide 36
+    
+    println!("\t\tOperadores de Deslocamento\n");
+    println!("Deslocando bits à esquerda\n");
+    println!("a = {:#x}",a);
+    println!("a (bin) = {:016b}",a);
+    println!("b (bin) = {:016b}",b);
+    println!("b = {:#x}",b);
+}
+
+~~~
 
 
+**Exemplo 23**
+~~~c
+fn main(){
+    let a:u16 = 0x6DB7;
+    let b:u16 = a >> 6;
+
+    //Reproduzindo exemplo do slide 38
+
+    println!("\t\tOperadores de Deslocamento\n");
+    println!("Deslocando bits à direita\n");
+    println!("a = {:#x}",a);
+    println!("a (bin) = {:016b}",a);
+    println!("b (bin) = {:016b}",b);
+    println!("b = {:#x}",b);
+}
+
+~~~
+
+
+**Exemplo 24**
+~~~c
+fn main(){
+    
+    let p1:u16 = 0x7f;
+    let p2 = 5;
+    let root:u16 = 0x6db7;
+    let mut a:u16 = original;
+    
+    //Reproduzindo resultados do slide 39
+    
+    println!("\t\tOperadores Bitwise de Atribuição\n");
+    println!("Expressão |  Equivalente | Valor Final\n");
+    
+    a = a & p1;
+    println!("a &= {:#x} | a = a & {:#x} | {:#x}", p1, p1, a);
+    
+    a = root;
+    a = a ^ p1;
+    println!("a ^= {:#x} | a = a ^ {:#x} | {:#x}", p1, p1, a);
+    
+    a = root;
+    a = a | p1;
+    println!("a |= {:#x} | a = a | {:#x} | {:#x}", p1, p1, a);
+
+    a = root;
+    a = a << p2;
+    println!("a <<= {}   | a = a << {}   | {:#x}", p2, p2, a);
+
+    a = root;
+    a = a >> p2;
+    println!("a >>= {}   | a = a >> {}   | {:#x}", p2, p2, a);
+
+}
+
+~~~
