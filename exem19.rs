@@ -6,6 +6,8 @@ fn main(){
     let m2:u8 = 0x14;
     let c:u8 = a|m2;
     
+    //Exemplo na página 31
+
     println!("Máscara\n");
     println!("Outro exemplo, eu quero trocar os bits 5, 4 e 3 para o valor 101\ne mantendo os outros bits intactos.\n");
     println!("{:#x} = {:08b} = B", b, b);

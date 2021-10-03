@@ -2,6 +2,8 @@ fn main(){
     
     let a:u16 = 0x6db7;
     let complementar = !a;
+
+    //Exemplo na página 8
     
     println!("Operador Bitwise Lógicos\n");
     println!("Suponha que a seja variável inteira sem sinal de valores {:#x}.", a);

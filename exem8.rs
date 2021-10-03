@@ -3,6 +3,8 @@ fn main(){
     let a:u16 = 0x6db7;
     let b:u16 = 0xa726;
     let ab = a&b;
+
+    //Exemplo na página 10
     
     println!("Operador Bitwise Lógicos\n");
     println!("Suponha que a e b sejam variáveis inteiras\nsem sinal de valores {:#x} e {:#x}.", a, b);

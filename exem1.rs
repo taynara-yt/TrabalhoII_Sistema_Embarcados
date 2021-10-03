@@ -3,6 +3,8 @@ fn main(){
     let original:u16 = 0x7ff;
     let complementar = !original;
     
+    //Exemplo na página 4
+    
     println!("Operador Complementar (16 bits)\n");
     println!("Qual será o complemento de {:#x} ?", original);
     println!("Representação em bits é: {:016b}", original);

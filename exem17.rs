@@ -5,6 +5,8 @@ fn main(){
     let b:u16 = a ^ m;
     let c:u16 = b ^ m;
     
+    //Exemplo na página 27
+
     println!("Máscara\n");
     println!("Suponha que a seja uma variável inteira sem sinal cujo valor é {:#x}.", a);
     println!("Qual o resultado da expressão a ^ {:#x} ?", m);

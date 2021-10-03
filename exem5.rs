@@ -2,6 +2,8 @@ fn main(){
     
     let original:u32 = 0x5b3c;
     let complementar = !original;
+
+    //Exemplo na página 5
     
     println!("Operador Complementar (32 bits)\n");
     println!("Qual será o complemento de {:#x} ?", original);

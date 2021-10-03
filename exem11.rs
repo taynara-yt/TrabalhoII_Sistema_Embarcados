@@ -4,6 +4,8 @@ fn main(){
     let m:u16 = 0x3f;
     let b:u16 = a & m;
 
+    //Exemplo na página 15
+
     println!("Máscara\n");
     println!("Suponha que a = {:#x} e que queiramos extrair os 6 bits mais\na direita de a e assinalar à variável b. Como fazer isso ?\n", a);
     println!("a = {:016b} = {:#x}", a, a);
