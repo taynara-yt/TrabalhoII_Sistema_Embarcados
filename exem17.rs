@@ -11,7 +11,6 @@ valor de a será alternado entre 0x6DB7 e 0x6DB3
 • Nesse caso, o terceiro bit será “ligado” e
 “desligado” alternadamente.*/
 
-
 fn main() {
     
     let a = 0x6DB7u16;
@@ -21,9 +20,9 @@ fn main() {
      
      println!("Máscara");
      println!("Vamos verificar a validade:");
-     println!("Representação de A: {:#x}  = {:#018b}", a, a);
+     println!("Representação de A: {:#x}  = {:016b}", a, a);
      println!("Máscara: {:#x} = {:#018b}", masc, masc);
-     println!("Representação de B: {:#x} = {:#018b}", b, b);
+     println!("Representação de B: {:#x} = {:016b}", b, b);
      println!("Máscara: {:#x} = {:#018b}", masc, masc);
-     println!("Representação de C: {:#x} = {:#018b}", c, c);
+     println!("Representação de C: {:#x} = {:016b}", c, c);
  }
