@@ -4,8 +4,8 @@ fn main() {
     
      println!("Operadores Bitwise Lógicos:");
      println!("Qual o valor de ~a ?");
-     println!("Representação em bits é: {:#018b}", a);
+     println!("Representação em bits é: {:016b}", a);
      println!("a~: {:b}", !a);
-     println!("Que corresponde à: {:x}", !a);
+     println!("Que corresponde à: {:#x}", !a);
          
  }
