@@ -18,7 +18,7 @@ fn main() {
      
      println!("Máscara:");
      println!("Extrair os 6 bits mais a esquerda de 0x6DB7 e assinale à variável inteira sem sinal b. Assinale 0s aos 10 bits mais à direita de b." );
-     println!("Representação de A: {:#x} em bits = {:#018b}", a, a);
-     println!("Máscara: {:#x} = {:#018b}", masc, masc);
-     println!("Representação de B: {:#x} em bits = {:#018b}", b, b);
+     println!("Representação de A: {:#x} em bits = {:016b}", a, a);
+     println!("Máscara: {:#x} = {:016b}", masc, masc);
+     println!("Representação de B: {:#x} em bits = {:016b}", b, b);
  }
